@@ -1,0 +1,251 @@
+*root{
+    --text-color: #1a1c28;
+    --background-color: #eeeff1;
+    --link-color: #4a76ee;
+
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poopins', sans-serif;
+    color: var(--text-color);
+    background-color:var(--background-color);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration:none;  
+}
+
+nav{
+    
+    display:flex; 
+    justify-content: space-between;
+    align-items:center;
+    background-color:rgb(216, 246, 246);
+
+    padding: 0 50px;
+    height: 80px;
+}
+
+nav .left-side a{
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 600;
+
+}
+
+
+
+nav .right-side a{
+    color: var(--text-color);
+    margin: 0 15px;
+
+}
+
+nav .right-side a span{
+    margin-left:5px;
+}
+
+/* Her Section */
+
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color:rgb(207, 207, 227); */
+
+    padding: 0 40px;
+    margin: 50px 0;
+    margin-bottom: 40px;
+    gap: 30px;
+
+}
+
+.hero-section .text{
+    flex: 5;
+}
+
+.hero-section .text h2{
+    font-size: 20px;
+}
+
+.hero-section .text .links{
+    margin-top: 10px;
+}
+
+.hero-section .text .links a{
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right:2px;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+.hero-section .text .links a:hover{
+    color: var(--text-color);
+}
+
+.hero-section .profile-images{
+    flex:2;
+
+}
+
+.hero-section .profile-image img{
+    height: 200px;
+    width: 200px;
+
+    border-radius: 50%;
+}
+
+/* skills section */
+
+.skills-section{
+    padding: 0px 50px;
+    margin-bottom: 100px;
+}
+
+.skills-section h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+.skills-section .description{
+    text-align: center;   
+}
+
+.skills-section .cells{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.skills-section .cells .cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+
+    padding: 10px 20px;
+    margin: 10px;
+    border:2px solid rgb(231, 208, 208);
+    border-radius: 5px;
+
+}
+
+.skills-section .cells .cell img{
+    height: 30px;
+    width: 30px;
+
+}
+
+.skills-section .cells .cell span{
+    font-size: 18px;
+}
+/* Project section */
+
+.project-section{
+    /* background-color: aqua; */
+    padding: 0px 50px;
+}
+.project-section h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px; 
+
+}
+.project-section .project{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+.project-section .project .project-card{
+    background-color:rgb(247, 239, 239);
+    margin: 10px 5px;
+    padding: 10px 5px;
+    border-radius: 10px;
+    height: 300px;
+    overflow: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2)
+
+}
+
+.project-section .project .project-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-section .project .project-card img{
+    height: 100x;
+    width: 120px;
+    margin-bottom: 10px;
+    
+}
+
+/* 
+contact section */
+
+.contact-section{
+    padding: 0px 50px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+
+}
+
+.contact-section .contact-info{
+    display: flex;
+    gap: 50px;
+}
+
+.contact-section .contact-info .contact-text{
+    flex: 3;
+}
+
+.contact-section .contact-info form{
+    flex:3;
+    display: flex;
+    flex-direction: column;
+} 
+
+.contact-section .contact-info form input, .contact-section .contact-info textarea{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background-color: transparent;
+    padding: 10px;
+    border: 2px solid rgb(168, 154, 154);
+    border-radius: 8px;
+
+}
+
+.contact-section .contact-info form button{
+    color: white;
+    font-weight:20px;
+    font-size: 16px;
+    background-color: rgb(37, 186, 124);
+    padding: 10px;
+    margin-top: 2px;
+    border: 2px solid rgb(19, 137, 99);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contact-section .contact-info form button:hover{
+    filter: brightness(0.9)
+
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    margin-bottom: 10px;
+
+}
